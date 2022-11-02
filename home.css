@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+body {
+    background: #221E1F;
+    margin: 0;
+    background-image: url('bottomBackdrop.png');
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    width: 45%;
+}
+
+.navbarIcon {
+    height: 100px;
+}
+
+.textNavigation {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarTitle {
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+}
