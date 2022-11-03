@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
 
+:root {
+    --rotateAngle: 10deg;
+}
+
 body {
     background: #221E1F;
     margin: 0;
@@ -17,8 +21,9 @@ body {
 }
 
 .navbar {
-    display: flex;
+    display: none;
     width: 45%;
+    transition: width 1.5s ease;
 }
 
 .navbarIcon {
@@ -37,7 +42,19 @@ body {
     color: aliceblue;
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     cursor: pointer;
+    transition: color 0.15s, transform 0.15s;
+}
+
+.navbarTitle:hover {
+    color: #F77A01;
+    transform: rotate(var(--rotateAngle));
+}
+
+@media (max-width: 1600px) {
+    .navbar {
+        width: 70%;
+    }
 }
