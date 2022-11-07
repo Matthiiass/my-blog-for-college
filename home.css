@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 
 :root {
     --rotateAngle: 10deg;
+    --nameFont: 'Comfortaa';
+    --nameType: cursive;
+    --nameFontWeight: 700;
+}
+
+@keyframes bouncingArrow {
+    0% {transform: translateY(0%);}
+    50% {transform: translateY(25%);}
+    100% {transform: translateY(0%);}
 }
 
 body {
@@ -10,18 +21,27 @@ body {
     margin: 0;
     background-image: url('bottomBackdrop.png');
     background-repeat: repeat-x;
-    background-position: center bottom;
-    height: 100%;
+    background-position: 50% 100%;
 }
 
 .container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 20%;
 }
 
 .navbar {
-    display: none;
+    display: flex;
+    align-items: center;
     width: 45%;
     transition: width 1.5s ease;
 }
@@ -46,11 +66,113 @@ body {
     text-align: center;
     cursor: pointer;
     transition: color 0.15s, transform 0.15s;
+    user-select: none;
 }
 
 .navbarTitle:hover {
     color: #F77A01;
     transform: rotate(var(--rotateAngle));
+}
+
+.welcome {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 23%;
+
+}
+
+.name {
+    color: #F77A01;
+    font-family: var(--nameFont), var(--nameType);
+    font-weight: var(--nameFontWeight);
+}
+
+
+.welcometext {
+    color: rgb(219, 219, 219);
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+#fname {
+    font-size: 80px;
+}
+#lname {
+    font-size: 40px;
+    margin-left: 1%;
+}
+
+#bouncingarrow {
+    margin-top: 2%;
+    font-size: 30px;
+    align-self: center;
+    transform: translateY(50%);
+    animation-name: bouncingArrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    user-select: none;
+}
+
+.latestposts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#latest {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.blogPost {
+    width: 85%;
+    background-color: #302e2e;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.bar {
+    width: 1%;
+    background-color: #F77A01;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+}
+
+.blogStat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    padding-right: 1.5%;
+}
+
+.blogTitle {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 1%;
+}
+
+.blogDesc {
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 3%;
 }
 
 @media (max-width: 1600px) {
