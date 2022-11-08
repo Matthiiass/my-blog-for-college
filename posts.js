@@ -22,5 +22,21 @@ blogData = [
         "desc": "Description 1",
         "date": 1660566180,
         "link": ""
-    }
+    },
+    {
+        "title": "Post 4",
+        "category": "projects",
+        "subCategory": "",
+        "desc": "Description 1",
+        "date": 1660566180,
+        "link": ""
+    },
+    {
+        "title": "Post 5",
+        "category": "programming",
+        "subCategory": "python",
+        "desc": "Description 1",
+        "date": 1660220580,
+        "link": ""
+    },
 ]

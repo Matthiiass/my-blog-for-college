@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    transition: width 1.5s ease;
+}
+
+.navbarIcon {
+    height: 100px;
+}
+
+.textNavigation {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarTitle {
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.15s, transform 0.15s;
+    user-select: none;
+    text-decoration: none;
+}
+
+.navbarTitle:hover {
+    color: #F77A01;
+    transform: rotate(10deg);
+}

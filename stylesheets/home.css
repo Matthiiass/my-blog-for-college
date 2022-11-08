@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+@keyframes bouncingArrow {
+    0% {transform: translateY(0%);}
+    50% {transform: translateY(25%);}
+    100% {transform: translateY(0%);}
+}
+
+body {
+    background: #221E1F;
+    margin: 0;
+    background-image: url('../bottomBackdrop.png');
+    background-repeat: repeat-x;
+    background-position: 50% 100%;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 20%;
+}
+
+.welcome {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 23%;
+
+}
+
+.name {
+    color: #F77A01;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+}
+
+
+.welcometext {
+    color: rgb(219, 219, 219);
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+#fname {
+    font-size: 80px;
+}
+#lname {
+    font-size: 40px;
+    margin-left: 1%;
+}
+
+#bouncingarrow {
+    margin-top: 2%;
+    font-size: 30px;
+    align-self: center;
+    transform: translateY(50%);
+    animation-name: bouncingArrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    user-select: none;
+}
+
+.latestposts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#latest {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media (max-width: 1600px) {
+    .navbar {
+        width: 70%;
+    }
+}

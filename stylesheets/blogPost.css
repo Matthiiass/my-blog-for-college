@@ -1,0 +1,52 @@
+.latestposts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.blogPost {
+    width: 85%;
+    background-color: #302e2e;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.bar {
+    width: 1%;
+    background-color: #F77A01;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+}
+
+.blogStat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    padding-right: 1.5%;
+}
+
+.blogTitle {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 1%;
+}
+
+.blogDesc {
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 3%;
+}

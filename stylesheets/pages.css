@@ -1,0 +1,25 @@
+body {
+    background: #221E1F;
+    margin: 0;
+    background-image: url('../bottomBackdrop.png');
+    background-repeat: repeat-x;
+    background-position: 50% 100%;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 20%;
+}
+
+.categoryTitle {
+    color: rgb(219, 219, 219);
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    text-decoration: underline;
+}

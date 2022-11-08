@@ -1,6 +1,8 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="home.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/home.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/blogPost.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/nav.css">
         <title>Matt Gregory Portfolio</title>
         <link rel="ICON" href="icon.png" type="image/png" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -10,11 +12,11 @@
             <div class="navbar">
                 <img src="icon.png" class="navbarIcon"/>
                 <div class="textNavigation">
-                    <span class="navbarTitle" id="home">Home</span>
-                    <span class="navbarTitle" id="programming">Programming</span>
-                    <span class="navbarTitle" id="ca">Content Areas</span>
-                    <span class="navbarTitle" id="projects">Projects</span>
-                    <span class="navbarTitle" id="industry">Industry</span>
+                    <a class="navbarTitle" id="home" href="#">Home</a>
+                    <a class="navbarTitle" id="programming" href="./pages/programming.html">Programming</a>
+                    <a class="navbarTitle" id="ca" href="./pages/CA.html">Content Areas</a>
+                    <a class="navbarTitle" id="projects" href="./pages/projects.html">Projects</a>
+                    <a class="navbarTitle" id="industry" href="./pages/industry.html">Industry</a>
                 </div>
             </div>
             <div class="bottom">
@@ -46,8 +48,7 @@
                 </div>
             </div>
         </div>
-        <script src="script.js"></script>
         <script src="posts.js"></script>
-        <script src="homepageBlogs.js"></script>
+        <script src="./scripts/homepageBlogs.js"></script>
     </body>
 </html>
