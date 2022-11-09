@@ -43,3 +43,9 @@
     color: #F77A01;
     transform: rotate(10deg);
 }
+
+@media (max-width: 1600px) {
+    .navbar {
+        width: 70%;
+    }
+}

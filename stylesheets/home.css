@@ -79,9 +79,3 @@ body {
     font-size: 40px;
     font-weight: 700;
 }
-
-@media (max-width: 1600px) {
-    .navbar {
-        width: 70%;
-    }
-}
