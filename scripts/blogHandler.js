@@ -1,4 +1,11 @@
 const blogData = window.blogData
+const categoryColours = {
+  "programming": '#e3d736',
+  "projects": '#b652de',
+  "industry": '#de5233',
+  "year 1": '#36b5e3',
+  "year 2": '#e86fbc'
+}
 
 function getUrlParameter(sParam)
 {
@@ -27,5 +34,7 @@ var blogID = getUrlParameter('blog') // Index of blog in the data arrays
 const blogInfor = blogData[blogID.slice(2)]
 
 document.querySelector('#blogTitle').innerHTML = blogInfor.title
-document.querySelector('#blogTags').innerHTML = toTitleCase(blogInfor.category) + ((blogInfor.subCategory != "") ? ", " + toTitleCase(blogInfor.subCategory) : "")
+document.querySelector('#blogTags').innerHTML = toTitleCase(blogInfor.category) + ((blogInfor.subCategory != "") ? " - " + toTitleCase(blogInfor.subCategory) : "")
+document.querySelector('#blogTags').style.color = categoryColours[blogInfor.category]
 document.querySelector('#blogDate').innerHTML = new Date(blogInfor.date * 1000).toLocaleDateString('en-UK')
+// document.querySelector('#contentArea').innerHTML = blogInfor.content

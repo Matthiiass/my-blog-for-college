@@ -14,7 +14,7 @@ var blogCount = 0
 
 for (var loop = 1; loop <= data.length; loop++) {
     const blog = data[data.length - loop]
-    if (blog.category != "content areas") {
+    if (blog.category != "year 1" && blog.category != "year 2") {
         continue
     }
     blogCount++;
@@ -32,8 +32,8 @@ for (var loop = 1; loop <= data.length; loop++) {
     else {
         newBlog.querySelector('.sub-category').innerHTML = toTitleCase(data[data.length - loop].subCategory)
     }
-    newBlog.querySelector('.bar').style.backgroundColor = '#3681e3'
-    newBlog.querySelector('.cat').style.color = '#3681e3'
+    newBlog.querySelector('.bar').style.backgroundColor = ((data[data.length - loop].category == "year 1") ? '#36b5e3' : '#e86fbc')
+    newBlog.querySelector('.cat').style.color = ((data[data.length - loop].category == "year 1") ? '#36b5e3' : '#e86fbc')
     newBlog.querySelector('.dates').innerHTML = new Date(data[data.length - loop].date * 1000).toLocaleDateString('en-UK')
     document.querySelector('.latestposts').appendChild(newBlog)
 }

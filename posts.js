@@ -1,41 +1,28 @@
 blogData = [
     {
-        "title": "Post 1",
+        "title": "Weather API Testing",
         "category": "programming",
         "subCategory": "python",
-        "desc": "Description 1",
+        "desc": "This was a test project I created in ben reads lesson revolving around getting a weather API to work and display the weather in several different locations.",
+        "content": ``,
         "date": 1660220580,
     },
     {
-        "title": "Post 2",
-        "category": "content areas",
-        "subCategory": "1",
-        "desc": "Description 1",
+        "title": "C Text-Based Adventure Game",
+        "category": "projects",
+        "subCategory": "C programming",
+        "desc": "Our end of year project for our C Programming lessons was to create and develop our own text-based adventure game using the C language.",
+        "content": ``,
+        "date": 1660566180,
+
+    },
+    {
+        "title": "Project Sekai Wiki UX Analysis",
+        "category": "year 2",
+        "subCategory": "",
+        "desc": "In Milenne's sessions we were tasked with analysing a website of our choice on the 7 principles of UX design.",
+        "content": ``,
         "date": 1660393380,
-
-    },
-    {
-        "title": "Post 3",
-        "category": "projects",
-        "subCategory": "",
-        "desc": "Description 1",
-        "date": 1660566180,
-
-    },
-    {
-        "title": "Post 4",
-        "category": "projects",
-        "subCategory": "",
-        "desc": "Description 1",
-        "date": 1660566180,
-
-    },
-    {
-        "title": "Post 5",
-        "category": "programming",
-        "subCategory": "python",
-        "desc": "Description 1",
-        "date": 1660220580,
 
     },
 ]

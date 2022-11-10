@@ -2,9 +2,10 @@ const data = window.blogData
 const blogTemplate = document.querySelector('.blogpost')
 const categoryColours = {
     "programming": '#e3d736',
-    "content areas": '#3681e3',
     "projects": '#b652de',
-    "industry": '#de5233'
+    "industry": '#de5233',
+    "year 1": '#36b5e3',
+    "year 2": '#e86fbc'
 }
 
 function toTitleCase(str) {

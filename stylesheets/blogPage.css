@@ -1,10 +1,41 @@
 .base {
     width: 70%;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
 }
 
 .bottom {
     margin-top: 3%;
+}
+
+#blogTitle {
+    font-size: 55px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#blogTags {
+    font-family: 'Kanit', sans-serif;
+    font-size: 23px;
+    margin-bottom: 1%;
+}
+#blogDate {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#contentArea {
+    margin-top: 5%;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-wrap;
+}
+
+.imageContainer {
+    width: 80%;
+    align-self: center;
 }
