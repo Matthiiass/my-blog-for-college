@@ -20,6 +20,7 @@ for (var loop = 1; loop <= data.length; loop++) {
     blogCount++;
     var newBlog = blogTemplate.cloneNode(true);
     
+    newBlog.href = `blog.html?blog=id${data.length-loop}`
     newBlog.style.display = 'flex'
     newBlog.querySelector('.blogTitle').innerHTML = data[data.length - loop].title
     newBlog.querySelector('.blogDesc').innerHTML = data[data.length - loop].desc

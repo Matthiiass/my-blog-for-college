@@ -1,0 +1,10 @@
+.base {
+    width: 70%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    margin-top: 3%;
+}

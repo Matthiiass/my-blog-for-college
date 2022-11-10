@@ -22,6 +22,8 @@ for (var loop = 1; loop < 4; loop++) {
     }
     var newBlog = blogTemplate.cloneNode(true);
 
+    newBlog.href = `./pages/blog.html?blog=id${data.length-loop}`
+
     newBlog.style.display = 'flex'
     newBlog.querySelector('.blogTitle').innerHTML = data[data.length - loop].title
     newBlog.querySelector('.blogDesc').innerHTML = data[data.length - loop].desc

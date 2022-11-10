@@ -5,7 +5,6 @@ blogData = [
         "subCategory": "python",
         "desc": "Description 1",
         "date": 1660220580,
-        "link": ""
     },
     {
         "title": "Post 2",
@@ -13,7 +12,7 @@ blogData = [
         "subCategory": "1",
         "desc": "Description 1",
         "date": 1660393380,
-        "link": ""
+
     },
     {
         "title": "Post 3",
@@ -21,7 +20,7 @@ blogData = [
         "subCategory": "",
         "desc": "Description 1",
         "date": 1660566180,
-        "link": ""
+
     },
     {
         "title": "Post 4",
@@ -29,7 +28,7 @@ blogData = [
         "subCategory": "",
         "desc": "Description 1",
         "date": 1660566180,
-        "link": ""
+
     },
     {
         "title": "Post 5",
@@ -37,6 +36,6 @@ blogData = [
         "subCategory": "python",
         "desc": "Description 1",
         "date": 1660220580,
-        "link": ""
+
     },
 ]
