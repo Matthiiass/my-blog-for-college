@@ -37,4 +37,4 @@ document.querySelector('#blogTitle').innerHTML = blogInfor.title
 document.querySelector('#blogTags').innerHTML = toTitleCase(blogInfor.category) + ((blogInfor.subCategory != "") ? " - " + toTitleCase(blogInfor.subCategory) : "")
 document.querySelector('#blogTags').style.color = categoryColours[blogInfor.category]
 document.querySelector('#blogDate').innerHTML = new Date(blogInfor.date * 1000).toLocaleDateString('en-UK')
-// document.querySelector('#contentArea').innerHTML = blogInfor.content
+document.querySelector('#contentArea').innerHTML = blogInfor.content

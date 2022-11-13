@@ -38,4 +38,10 @@
 .imageContainer {
     width: 80%;
     align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.blogImage {
+    height: 100%;
 }
