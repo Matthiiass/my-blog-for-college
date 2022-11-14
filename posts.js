@@ -6,7 +6,7 @@ blogData = [
         "desc": "This was a test project I created in ben reads lesson revolving around getting a weather API to work and display the weather in several different locations.",
         "content": `<a>Why hello there. I am some text on a page.
 Im hoping this drops down a line on the page. Oh hey! It did! I figured stuff out!</a>
-        <div class="imageContainer" style="height: 250px;">
+        <div class="imageContainer" style="height: 500px;">
             <img src="../icon.png" class="blogImage">
         </div>
         <a>Here's some more text thats displayed under the image. The image can be adjusted through in-line styling :)</a>`,
