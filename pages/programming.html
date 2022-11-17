@@ -3,14 +3,15 @@
         <link rel="stylesheet" type="text/css" href="../stylesheets/pages.css">
         <link rel="stylesheet" type="text/css" href="../stylesheets/blogPost.css">
         <link rel="stylesheet" type="text/css" href="../stylesheets/nav.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/searching.css">
         <title>Matt Gregory Portfolio</title>
-        <link rel="ICON" href="../icon.png" type="image/png" />
+        <link rel="ICON" href="../resources/icon.png" type="image/png" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="navbar">
-                <img src="../icon.png" class="navbarIcon"/>
+                <img src="../resources/icon.png" class="navbarIcon"/>
                 <div class="textNavigation">
                     <a class="navbarTitle" id="home" href="../index.html">Home</a>
                     <a class="navbarTitle" id="programming" href="#">Programming</a>
@@ -21,6 +22,9 @@
             </div>
             <div class="bottom">
                 <a class="categoryTitle">Programming Blog Posts</a>
+                <div class="searchBar">
+                    <input type="text" placeholder="Search by title..." id="search">
+                </div>
                 <div class="latestposts">
                     <a class="blogpost">
                         <div class="bar"></div>
@@ -38,9 +42,18 @@
                         </div>
                     </a>
                 </div>
+                <div class="nothingHere" style="display: none;">
+                    <div style="height: 250px">
+                        <img src="../resources/james-may-knocked-over.gif" style="height: 100%; border-radius: 20px;">
+                    </div>
+                    <span class="nothingText">
+                        Oops! Nothing is here!
+                    </span>
+                </div>
             </div>
         </div>
         <script src="../posts.js"></script>
         <script src="../scripts/programming.js"></script>
+        <script src="../scripts/searchHandler.js"></script>
     </body>
 </html>

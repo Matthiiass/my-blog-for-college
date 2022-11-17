@@ -7,7 +7,7 @@ blogData = [
         "content": `<a>Why hello there. I am some text on a page.
 Im hoping this drops down a line on the page. Oh hey! It did! I figured stuff out!</a>
         <div class="imageContainer" style="height: 500px;">
-            <img src="../icon.png" class="blogImage">
+            <img src="../resources/icon.png" class="blogImage">
         </div>
         <a>Here's some more text thats displayed under the image. The image can be adjusted through in-line styling :)</a>`,
         "date": 1660220580,

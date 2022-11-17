@@ -21,6 +21,7 @@ for (var loop = 1; loop <= data.length; loop++) {
     var newBlog = blogTemplate.cloneNode(true);
     
     newBlog.href = `blog.html?blog=id${data.length-loop}`
+    newBlog.className += " validPost"
     newBlog.style.display = 'flex'
     newBlog.querySelector('.blogTitle').innerHTML = data[data.length - loop].title
     newBlog.querySelector('.blogDesc').innerHTML = data[data.length - loop].desc
@@ -38,6 +39,6 @@ for (var loop = 1; loop <= data.length; loop++) {
     document.querySelector('.latestposts').appendChild(newBlog)
 }
 
-if (blogCount < 2) {
-    document.body.style.height = '100%'
+if (blogCount == 0) {
+    document.querySelector('.nothingHere').style.display = "flex"
 }

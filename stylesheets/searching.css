@@ -1,0 +1,29 @@
+.searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+.nothingText {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+.nothingHere {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
